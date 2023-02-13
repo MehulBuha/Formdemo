@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mehul's gym</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        
+        background: url('https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg?quality=85&w=2121https://api.time.com/wp-content/uploads/2020/03/gym-coronavirus.jpg?quality=85&w=2121');
+        background-size: 100%;
+        color: black;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    
+    
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 60px;
+        cursor: pointer;
+
+
+
+
+
+    }
+
+    .left img {
+        width: 50px;
+    }
+
+    .left div {
+        text-align:center;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 34px;
+
+
+    }
+
+    .mid {
+
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+        color: black;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+
+
+    }
+
+    .navbar li a {
+        color:white;
+        text-decoration: none;
+        padding: 10px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        /*border: 2px solid white;*/
+        margin: 64px 56px;
+        padding: 20px 82px;
+        width: 33%;
+        border-radius: 90px;
+    }
+
+    .formgroup input {
+        text-align: center;
+        display: block;
+        width: 150px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 3px auto;
+        border-radius: 9px;
+        font-size: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .container h1 {
+        text-align: center;
+
+    }
+
+    .container button {
+        display: block;
+
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div> Fitness</div>
+
+        </div>
+        
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a> </li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">email now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join the best gym of surat now</h1>
+        <form action="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg?crop=1.00xw:0.671xh;0,0.235xh&resize=640:*"  name="myform" onsubmit="return validateform()">
+            <div class="formgroup">
+                <input type="text" name="fname" placeholder="enter your Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="Age" placeholder="enter your Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your Locality">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+    <div>
+        <a href="https://gym.com"></a>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    function validateform(){
+    let fname=document.forms.myform.fname.value;
+    let Age=document.forms.myform.Age.value;
+ 
+    if(fname ==""){
+alert("Name must be filled out");
+return false;
+    }
+ 
+    if(Age ==""){
+alert("Age must be filled out");
+return false;
+    }
+}
+</script>
